@@ -1,0 +1,7 @@
+#other_stuff {
+    flex-flow: column nowrap;
+}
+
+#other_stuff #jump {
+    background-color: #C4C4C4;
+}

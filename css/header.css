@@ -1,0 +1,91 @@
+#global_header {
+    background-color: #C4C4C4;
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#global_header > a:first-child {
+    display: flex;
+    background-color: #f9cfa9;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+#global_header > a:first-child > img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+#global_header .option {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#global_header .option > p {
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 28px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+#global_usericon {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    height: 64px;
+    filter: grayscale(1);
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+#global_header:target {
+    animation: global_jump 1s ease;
+}
+
+#global_usericon:hover {
+    filter: grayscale(0);
+}
+
+#global_header .option > p:hover{
+    background-color: pink;
+}
+
+@keyframes global_jump {
+    0% {background-color: pink;}
+    100% {background-color: #C4C4C4;}
+}
+
+@media screen and (min-width: 768px) {
+    #global_header {flex-flow: row wrap}
+    #global_header .option {width: 30vw}
+    #global_header .option > p {width: 80%}
+}
+
+@media screen and (min-width: 1024px) {
+    #global_header > a:first-child {width: auto; position: absolute; top: 10px; left: 10px}
+    #global_header {min-height: 110px; justify-content: flex-end; align-items: center;}
+    #global_header .option {width: 20vw; flex-grow: 0; margin: 0 10px}
+    #global_header .option > p {width: 100%}
+    #global_header .divider {width: 8vw}
+    #global_usericon {top: 20%}
+}
+
+@media screen and (min-width: 1440px) {
+    #global_header .option {width: 15vw}
+    #global_usericon {height: 80px; top: 10%; right: 0.5%}
+    #global_header .divider {width: 6vw}
+}

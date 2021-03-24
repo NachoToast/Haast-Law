@@ -1,0 +1,72 @@
+#help_banner {
+    background-color: #FCDDEC;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#help_banner > h1 {
+    font-size: 48px;
+    margin-top: 10px;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#help_banner > div {
+    align-items: center;
+    flex-flow:  row nowrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#help_banner > div > img {
+    width: 64px;
+}
+
+#help_banner > div > form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#help_banner > div > form > input {
+    width: 48vw;
+    height: 24px;
+    border: solid 1px black;
+    border-right: none;
+    outline: none;
+    padding: 0 5px;
+}
+
+#help_banner > div > form > button {
+    width: 24px;
+    height: 26px;
+    border: solid 1px black;
+    border-left: none;
+    outline: none;
+    background-color: white;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+    #help_banner > h1 {font-size: 64px}
+}
+
+@media screen and (min-width: 1024px) {
+    #help_banner > div {justify-content: space-evenly}
+    #help_banner > div > form > input {height: 40px; font-size: 20px; width: 30vw}
+    #help_banner > div > form > button {height: 42px; width: 42px}
+}
+
+@media screen and (min-width: 1440px) {
+    #help_banner > div > form > input {width: 30vw}
+}
+
+@media screen and (min-width: 1920px) {
+    #help_banner > h1 {font-size: 96px}
+}
