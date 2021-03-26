@@ -16,6 +16,7 @@ body {
     flex-flow: column nowrap;
 }
 
+/*
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -23,3 +24,4 @@ body {
     -o-transition: none !important;
     transition: none !important;
 }
+*/

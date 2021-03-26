@@ -11,6 +11,7 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="img/logo.png" rel="icon" type="image/png">
     <script defer src="js/main.js"></script>
+    <script defer src="js/index.js"></script>
     <title>Haast Law - Home</title>
 </head>
 <body class="preload">
@@ -30,7 +31,7 @@
 
 <div id="trending_articles">
     <h1>Trending Law Firm Articles of the Week</h1>
-    <div id="article_container">
+    <div id="article_container" class="article_containers">
         <a class="articles"><div>
             <img src="img/picture.png">
             <h1>Article</h1>
@@ -65,13 +66,52 @@
 <div id="other_stuff">
     <div id="jump">
         <h1>Jump back in!</h1>
+        <div id="article_container2" class="article_containers">
+            <a class="articles"><div>
+                <img src="img/picture.png">
+                <h1>Article</h1>
+            </div></a>
+            <a class="articles"><div>
+                <img src="img/picture.png">
+                <h1>Longer Article Name</h1>
+            </div></a>
+            <a class="articles"><div>
+                <img src="img/picture.png">
+                <h1>LongWorded ArticleTitle</h1>
+            </div></a>
+        </div>
     </div>
     <div id="new">
         <div>
-            <h1>what's new this week?</h1>
+            <h1>What's new this week?</h1>
+            <div id="article_container3">
+                <a class="articles"><div>
+                    <img src="img/picture.png">
+                    <h1>Article</h1>
+                    <img src="img/trending.png">
+                </div></a>
+                <a class="articles"><div>
+                    <img src="img/picture.png">
+                    <h1>Longer Article Name</h1>
+                    <img src="img/trending.png">
+                </div></a>
+                <a class="articles"><div>
+                    <img src="img/picture.png">
+                    <h1>LongWorded ArticleTitle</h1>
+                    <img src="img/trending.png">
+                </div></a>
+            </div>
         </div>
         <div>
             <h1>Hypertargeted Ads Here</h1>
+            <div id="a_container">
+                <div class="as preload"></div>
+                <div class="as preload"></div>
+                <div class="as preload"></div>
+                <div class="as preload"></div>
+                <div class="as preload"></div>
+                <div class="as preload"></div>
+            </div>
         </div>
     </div>
 </div>

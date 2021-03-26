@@ -1,7 +1,161 @@
 #other_stuff {
     flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 #other_stuff #jump {
     background-color: #C4C4C4;
+    flex-flow: column nowrap;
+    width: 90vw;
+    border-radius: 5px;
+}
+
+#other_stuff #jump > h1 {
+    text-align: center;
+    padding: 5px 0;
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+#other_stuff #jump #article_container2 {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+#other_stuff #jump #article_container2 .articles > div {
+    flex-flow: column nowrap;
+    align-items: center;
+    cursor: pointer;
+    width: 64px;
+    font-size: 10px;
+    margin: 0 3px;
+    text-align: center;
+    padding: 0 3px 3px 3px;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+#other_stuff #jump #article_container2 .articles > div:hover {
+    background-color: #E5E5E5;
+}
+
+#other_stuff #jump #article_container2 .articles > div > h1 {
+    font-weight: lighter;
+}
+
+#other_stuff #new {
+   background-color: #F178B6;
+   width: 90vw;
+   margin: 5px 0;
+   border-radius: 5px;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+#other_stuff #new > *:first-child > h1 {
+    font-weight: lighter;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#other_stuff #new > *:first-child #article_container3 {
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+#other_stuff #new > *:first-child #article_container3 .articles > div {
+    background-color: #C4C4C4;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 60px;
+    font-size: 10px;
+    margin: 3px 0;
+    text-align: center;
+    word-wrap: break-word;
+    width: 90%;
+    margin-left: 5%;
+    transition: 0.1s linear;
+}
+
+#other_stuff #new > *:first-child #article_container3 .articles > div:hover {
+    background-color: #E5E5E5;
+}
+
+#other_stuff #new > *:first-child #article_container3 .articles > div > h1 {
+    font-weight: lighter;
+    flex-grow: 1;
+}
+
+#other_stuff #new > *:first-child #article_container3 .articles > div > img:first-child {
+    height: 55px;
+    width: 55px;
+}
+
+#other_stuff #new > *:first-child #article_container3 .articles > div > img:last-child {
+    height: 55px;
+    width: 55px;
+    margin-right: 5px;
+}
+
+#other_stuff #new > *:last-child {
+    background-color: #C4C4C4;
+    width: 90%;
+    margin-top: 10px;
+    flex-flow: column nowrap;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+#other_stuff #new > *:last-child > h1 {
+    font-weight: lighter;
+    padding-top: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#other_stuff #new > *:last-child > #a_container {
+    justify-content: center;
+}
+
+#other_stuff #new > *:last-child > #a_container .as {
+    background-color: #FCDDEC;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+#other_stuff #new > *:last-child > #a_container .as:hover {
+    background-color: #bba3af;
+}
+
+@media screen and (min-width: 768px) {
+    #other_stuff #jump #article_container2 .articles > div {margin: 0 10px; width: 120px}
+    #other_stuff #new > *:last-child > #a_container .as {width: 200px}
+}
+
+@media screen and (min-width: 1024px) {
+    #other_stuff {flex-flow: row nowrap;}
+    #other_stuff {align-items: flex-start;}
+    #other_stuff #new {margin: 0;}
+}
+
+@media screen and (min-width: 1440px) {
+    #other_stuff #jump #article_container2 .articles > div {margin: 0 20px; width: 130px}
+    #other_stuff #jump {margin: 0 10px;}
+    #other_stuff #new {margin: 0 10px 5px 10px}
+}
+
+@media screen and (min-width: 1920px) {
+    #other_stuff #jump #article_container2 .articles > div {margin: 0 40px; width: 130px}
 }

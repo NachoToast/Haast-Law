@@ -30,6 +30,16 @@
     text-align: center;
     padding: 0 3px 3px 3px;
     word-wrap: break-word;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+#trending_articles #article_container .articles > div:hover {
+    background-color: pink;
+}
+
+#trending_articles #article_container .articles > div > h1 {
+    font-weight: lighter;
 }
 
 @media screen and (min-width: 768px) {
